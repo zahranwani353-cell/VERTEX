@@ -35,3 +35,10 @@ button {
     font-size: 16px;
     border-radius: 8px;
 }
+section {
+    min-height: 60vh;
+}
+
+h2 {
+    font-size: 35px;
+}
