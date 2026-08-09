@@ -64,3 +64,44 @@ a {
     margin: 20px auto;
     border-radius: 15px;
 }
+.hero {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.hero h1 {
+    font-size: 64px;
+    margin: 0;
+}
+
+.hero h2 {
+    font-size: 32px;
+    margin: 10px 0;
+}
+
+.hero p {
+    max-width: 600px;
+    line-height: 1.6;
+}
+
+.work-btn {
+    display: inline-block;
+    margin-top: 25px;
+    padding: 14px 28px;
+    background: #fbbf24;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+    font-weight: bold;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.work-btn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 20px rgba(251, 191, 36, 0.25);
+}
