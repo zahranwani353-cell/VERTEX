@@ -56,3 +56,11 @@ a {
     text-decoration: none;
     border-radius: 8px;
 }
+.project-image {
+    width: 100%;
+    max-width: 800px;
+    height: auto;
+    display: block;
+    margin: 20px auto;
+    border-radius: 15px;
+}
