@@ -42,3 +42,17 @@ section {
 h2 {
     font-size: 35px;
 }
+h3 {
+    font-size: 25px;
+    margin-top: 30px;
+}
+
+a {
+    display: inline-block;
+    margin-top: 15px;
+    padding: 12px 25px;
+    background: #fbbf24;
+    color: #111;
+    text-decoration: none;
+    border-radius: 8px;
+}
