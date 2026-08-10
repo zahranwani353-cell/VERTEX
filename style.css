@@ -139,3 +139,9 @@ section p {
 .card:hover{
     transform:translateY(-5px);
 }
+.tagline{
+    color:#fbbf24;
+    margin-top:15px;
+    font-size:14px;
+    letter-spacing:1px;
+}
