@@ -121,10 +121,12 @@ h2{
 .section-header h2{
     margin-bottom:20px;
 }
+
 .project-hint{
     display:block;
     margin-top:25px;
 }
+
 .project{
     display:flex;
     gap:30px;
