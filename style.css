@@ -120,42 +120,100 @@ h2{
 }
 
 .project{
-    display:grid;
-    grid-template-columns:100px 1fr auto;
-
-    align-items:center;
-
+    display:flex;
     gap:30px;
-
-    padding:55px 0;
-
+    padding:45px 20px;
     border-bottom:1px solid rgba(255,255,255,.08);
-
-    transition:.4s;
+    transition:.45s ease;
+    overflow:hidden;
 }
 
-.project:hover{
-    transform:translateX(12px);
-}
-
-.project span{
+.project-number{
     color:#7c3aed;
+    font-size:14px;
+    padding-top:8px;
 }
 
-.project h3{
-    font-size:clamp(28px,4vw,60px);
-    margin-bottom:10px;
+.project-main{
+    flex:1;
 }
 
-.project p{
+.project-main h3{
+    font-size:clamp(30px,6vw,65px);
+    line-height:1;
+    transition:.45s ease;
+}
+
+.project-details{
+    max-height:0;
+    opacity:0;
+    overflow:hidden;
+    transform:translateY(25px);
+    transition:.5s ease;
+}
+
+.project-details p{
+    max-width:600px;
     color:#a1a1aa;
-    max-width:650px;
+    line-height:1.7;
+    margin:25px 0 18px;
 }
 
-.project a{
+.project-details a{
     color:white;
     text-decoration:none;
     font-weight:600;
+    display:inline-block;
+    transition:.3s ease;
+}
+
+/* TOUCH / HOVER EFFECT */
+
+.project:hover,
+.project:focus-within{
+    border-bottom:1px solid #7c3aed;
+    background:rgba(124,58,237,.04);
+}
+
+.project:hover .project-main h3,
+.project:focus-within .project-main h3{
+    transform:translateX(8px);
+}
+
+.project:hover .project-details,
+.project:focus-within .project-details{
+    max-height:180px;
+    opacity:1;
+    transform:translateY(0);
+}
+
+.project-details a:hover{
+    color:#a78bfa;
+    transform:translateX(8px);
+}
+
+
+/* MOBILE */
+
+@media(max-width:768px){
+
+    .project{
+        padding:35px 10px;
+        gap:18px;
+    }
+
+    .project-main h3{
+        font-size:34px;
+    }
+
+    /* Mobile par tap/focus ke baad reveal */
+    .project:active .project-details,
+    .project:focus-within .project-details{
+        max-height:180px;
+        opacity:1;
+        transform:translateY(0);
+    }
+
 }
 
 /* SKILLS */
